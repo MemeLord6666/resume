@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Start nav */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: forestgreen;
+    color: white;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+.navbar a {
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 7px;
+    font-size: 19px;
+}
+.navbar a:hover {
+    border: 1px  white;
+    background-color: rgba(234, 228, 180, 0.952);
+}
+.navbar span {
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+}
+/* End nav*/
+
+/* Start content */
+.bgrd {
+    width: 100%;
+    height: 620px;
+    background: url(./images/1651722459_4-celes-club-p-zelenaya-priroda-krasivo-foto-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    color: white;
+}
+.card {
+    padding-top: 80px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+.card p{
+    color: white;
+    font-size: 22px;
+}
+.card button {
+    padding: 12px;
+    color: white;
+    text-align: center;
+    background-color: green;
+    border: none white;
+    width: 80%;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.card button:hover {
+    opacity: 0.7; 
+}
+.socialnetwork img {
+    width: 20px;
+    height: 20px;
+}
+
+.About {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    width: 900px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+}
+.About_content-text {
+    display: flex;
+}
+.About_content {
+    display: flex;
+    justify-content: space-around;
+}
+.About_content {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Start  burger menu */
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 53333;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  /* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: green;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}
+h2 {
+    text-align: center;
+    font-size: 54px;
+    font-family: 'Pacifico', cursive;
+    margin-top: 70px;
+}
+/* End burger menu */
+
+/* Start education */
+.Education {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    width: 900px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+}
+.Education_left {
+    background-color: green;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.Education_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+}
+/* End education */
+
+/* Start Experience */
+.Experience {
+    display: flex;
+    justify-content: center;
+}
+.ww {
+    margin-top: 700px;
+}
+/* End Experience */
+/* Start section */
+.section {
+    position: absolute;
+    left: 50%;
+    top: 300%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.skills {
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Pacifico', cursive;
+}
+.diagram {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.skillBlock {
+    height: 380px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;  
+}
+.skillBlock:first-child .column {
+    height: calc(350% / 350 * 85);  /*85%*/
+    background: green;
+    animation: appFir 2s 1;
+}
+.skillBlock:nth-child(2) .column {
+    height: calc(350% / 350 * 65);  /*85%*/
+    background: red;
+    animation: appSec 2s 1;
+}
+.skillBlock:last-child .column {
+    height: calc(350% / 350 * 90);  /*85%*/
+    background: yellow;
+    animation: appThi 2s 1;
+}
+.column span {
+    transform: rotate(-90deg);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    animation: app 3s 1;
+}
+.name {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-style: 25px;
+    margin-top: 10px;
+}
+@keyframes appFir {
+    0% {
+        height: 0;
+    }
+    70% {
+        height: 0;
+    }
+    100% {
+        height: calc(350 / 350 * 85);  
+    }
+}
+@keyframes appSec {
+    0% {
+        height: 0;
+    }
+    70% {
+        height: 0;
+    }
+    100% {
+        height: calc(350% / 350 * 90); 
+    }
+}
+@keyframes appThi {
+    0% {
+        height: 0;
+    }
+    70% {
+        height: 0;
+    }
+    100% {
+        height: calc(350 / 350 * 85);  
+    }
+}
+/* Start footer */
+footer {
+    margin-top: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    
+}
+.foot img {
+    width: 50px;
+    height: 50px;
+    
+}
+/* End footer */
+
+
+
+@media all and (max-width: 960px) {
+    .links {
+      display: none;
+    }
+    .hamburger-menu{
+      display: block;
+    }
+    .menu__btn {
+      display: block;
+    }
+  }
+@media all and (max-width: 1100px) {
+    .navbar {
+        width: 100vw;
+    }
+}
+@media all and (max-width: 905px) {
+    .About {
+        width: 100vw;
+    }
+}
+@media all and (max-width: 905px) {
+    .Education {
+        width: 100vw;
+    }
+    .Experience img {
+        width: 100vw;
+    }
+}
+@media all and (max-width: 830px) {
+    .About_content p {
+        font-size: 15px;
+    }
+    .Education_right {
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 534px) {
+    .About_content p {
+        font-size: 12px;
+    }
+    .Education_right {
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 450px) {
+    .About_content p {
+        font-size: 10px;
+    }
+    .Education_right {
+        font-size: 10px;
+    }
+}
+@media all and (max-width: 350px) {
+    .About_content p {
+        font-size: 9px;
+    }
+    .Education_right {
+        font-size: 9px;
+    }
+    h3 {
+        font-size: 10px ;
+    }
+    h2 {
+        font-style: 10px;
+    }
+    .Education {
+        width: 100vw;
+    }
+    .Education_right {
+        display: none;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
